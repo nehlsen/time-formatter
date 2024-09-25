@@ -1,0 +1,32 @@
+# This file contains paths that ignored by docker when building docker images.
+# Maintaining this file helps to reduce the size of build context and thus speed up builds.
+# This list is not exhaustive. You will have to adjust the contents of this file
+# to meet your project needs.
+# See: https://docs.docker.com/engine/reference/builder/#dockerignore-file
+
+## FOLDERS ##
+# Exclude vendor since `composer install` is a part of the build process.
+/vendor/
+# no tests in prod image!
+/tests/
+
+## FILES ##
+# Ignore this file itself.
+**/.dockerignore
+
+# Ignore git cofiguration files and folders
+**/.gitattributes
+**/.gitignore
+**/.gitmodules
+
+# Ignore log. Container processes should log to STDIO.
+**/*.log
+
+# Ignore OS files
+**/.DS_Store
+**/Thumbs.db
+
+# When editing php-files with vim you might want to exlude temp files.
+**/*.php~
+
+Dockerfile

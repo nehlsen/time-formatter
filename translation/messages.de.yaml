@@ -1,0 +1,13 @@
+time:
+  seconds:
+    title: 'Sekunde|Sekunden'
+    abbr: 's'
+  minutes:
+    title: 'Minute|Minuten'
+    abbr: 'm'
+  hours:
+    title: 'Stunde|Stunden'
+    abbr: 'h'
+  days:
+    title: 'Tag|Tage'
+    abbr: 'd'

@@ -5,7 +5,7 @@
   "type": "lib",
   "require": {
     "php": "^8.3",
-    "symfony/options-resolver": "^6.3",
+    "symfony/options-resolver": "^6.3 || ^7.0",
     "symfony/translation-contracts": "^2.5 || ^3.0"
   },
   "require-dev": {

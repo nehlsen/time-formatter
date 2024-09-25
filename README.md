@@ -31,10 +31,3 @@ For a range of options and examples see [example1.php](example/example1.php)
    But they are not enabled automatically.
    * [messages.en.yaml](translation/messages.en.yaml)
    * [messages.de.yaml](translation/messages.de.yaml)
-
-## local dev
-
-1. dcb
-2. dcr --rm test composer install
-3. dcr --rm test composer test
-

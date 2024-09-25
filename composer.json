@@ -1,4 +1,7 @@
 {
+  "name": "nehlsen/time-formatter",
+  "description": "Small Utility to format _remaining_ time of something into a human-readable form",
+  "license": "MIT",
   "type": "lib",
   "require": {
     "php": "^8.3",

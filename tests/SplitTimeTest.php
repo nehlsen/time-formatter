@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace nehlsen\TimeFormatter\Tests;
+namespace nehlsen\TimeFormatterBundle\Tests;
 
-use nehlsen\TimeFormatter\SplitTime;
-use nehlsen\TimeFormatter\TimeUnit;
+use nehlsen\TimeFormatterBundle\TimeFormatter\SplitTime;
+use nehlsen\TimeFormatterBundle\TimeFormatter\TimeUnit;
 use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 use Prophecy\PhpUnit\ProphecyTrait;

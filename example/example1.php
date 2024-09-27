@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
-use nehlsen\TimeFormatter\TimeFormatter;
-use nehlsen\TimeFormatter\TimeUnit;
+use nehlsen\TimeFormatterBundle\TimeFormatter\TimeFormatter;
+use nehlsen\TimeFormatterBundle\TimeFormatter\TimeUnit;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
 include __DIR__ . '/../vendor/autoload.php';

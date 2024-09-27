@@ -1,10 +1,13 @@
 {
   "name": "nehlsen/time-formatter",
-  "description": "Small Utility to format _remaining_ time of something into a human-readable form",
+  "description": "Small Utility to format remaining time of something into a human-readable form",
   "license": "MIT",
-  "type": "lib",
+  "type": "symfony-bundle",
   "require": {
     "php": "^8.3",
+    "symfony/config": "^6.3 || ^7.0",
+    "symfony/dependency-injection": "^6.3 || ^7.0",
+    "symfony/http-kernel": "^6.3 || ^7.0",
     "symfony/options-resolver": "^6.3 || ^7.0",
     "symfony/translation-contracts": "^2.5 || ^3.0"
   },
@@ -18,12 +21,12 @@
   },
   "autoload": {
     "psr-4": {
-      "nehlsen\\TimeFormatter\\": "src/"
+      "nehlsen\\TimeFormatterBundle\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "nehlsen\\TimeFormatter\\Tests\\": "tests/"
+      "nehlsen\\TimeFormatterBundle\\Tests\\": "tests/"
     }
   },
   "config": {

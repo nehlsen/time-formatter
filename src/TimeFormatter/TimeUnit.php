@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace nehlsen\TimeFormatter;
+namespace nehlsen\TimeFormatterBundle\TimeFormatter;
 
 enum TimeUnit: string
 {

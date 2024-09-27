@@ -1,0 +1,6 @@
+services:
+  _defaults:
+    autowire: false
+    autoconfigure: false
+
+  nehlsen\TimeFormatterBundle\TimeFormatter\TimeFormatter: ~

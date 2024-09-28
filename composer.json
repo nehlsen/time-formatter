@@ -1,5 +1,5 @@
 {
-  "name": "nehlsen/time-formatter",
+  "name": "nehlsen/time-formatter-bundle",
   "description": "Small Utility to format remaining time of something into a human-readable form",
   "license": "MIT",
   "type": "symfony-bundle",

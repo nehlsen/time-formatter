@@ -42,6 +42,10 @@ class TimeFormatterExample extends Command
 
         // 51.6 Hours
         $output->writeln($this->timeFormatter->format($secondsUntilEvent, ['fraction' => true, 'fixed_unit' => TimeUnit::HOURS]));
+        // 51.143 Hours
+        $output->writeln($this->timeFormatter->format($secondsUntilEvent, ['fraction' => true, 'precision' => 3, 'fixed_unit' => TimeUnit::HOURS]));
+        // 50 Hours
+        $output->writeln($this->timeFormatter->format($secondsUntilEvent, ['fraction' => true, 'precision' => -1, 'fixed_unit' => TimeUnit::HOURS]));
 
         return Command::SUCCESS;
     }

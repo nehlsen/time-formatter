@@ -20,28 +20,28 @@ class TimeFormatterExample extends Command
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $tomorrow = new \DateTimeImmutable('next week 12:13:37');
-        $secondsUntilTomorrow = $tomorrow->getTimestamp() - time();
+        $dateOfMyEvent = new \DateTimeImmutable('next week 12:13:37');
+        $secondsUntilEvent = $dateOfMyEvent->getTimestamp() - time();
 
         $output->writeln('TimeFormatter Example');
-        $output->writeln(sprintf('Date: %s', $tomorrow->format(DATE_ATOM)));
+        $output->writeln(sprintf('Date: %s', $dateOfMyEvent->format(DATE_ATOM)));
         $output->writeln('remaining time:');
         $output->writeln('');
 
         // 2 Days 3 Hours 33 Minutes 48 Seconds
-        $output->writeln($this->timeFormatter->format($secondsUntilTomorrow));
+        $output->writeln($this->timeFormatter->format($secondsUntilEvent));
 
         // 2d 3h 33m 48s
-        $output->writeln($this->timeFormatter->format($secondsUntilTomorrow, ['abbreviate' => true]));
+        $output->writeln($this->timeFormatter->format($secondsUntilEvent, ['abbreviate' => true]));
 
         // 2d 3h
-        $output->writeln($this->timeFormatter->format($secondsUntilTomorrow, ['abbreviate' => true, 'significant' => 2]));
+        $output->writeln($this->timeFormatter->format($secondsUntilEvent, ['abbreviate' => true, 'significant' => 2]));
 
         // 2.1 Days
-        $output->writeln($this->timeFormatter->format($secondsUntilTomorrow, ['fraction' => true]));
+        $output->writeln($this->timeFormatter->format($secondsUntilEvent, ['fraction' => true]));
 
         // 51.6 Hours
-        $output->writeln($this->timeFormatter->format($secondsUntilTomorrow, ['fraction' => true, 'fixed_unit' => TimeUnit::HOURS]));
+        $output->writeln($this->timeFormatter->format($secondsUntilEvent, ['fraction' => true, 'fixed_unit' => TimeUnit::HOURS]));
 
         return Command::SUCCESS;
     }

@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace nehlsen\TimeFormatter;
+namespace nehlsen\TimeFormatterBundle\TimeFormatter;
 
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Contracts\Translation\TranslatorInterface;

@@ -14,7 +14,7 @@ $bestBefore = $myMilk->getBestoBefore();
 
 $secondsUntilBad = $bestBefore->getTimestamp() - time();
 
-$formatter = new \nehlsen\TimeFormatter\TimeFormatter();
+$formatter = new \nehlsen\TimeFormatterBundle\TimeFormatter\TimeFormatter();
 $formattedBestBefore = $formatter->format($secondsUntilBad);
 // $formattedBestBefore == '3 Days 1 Hour 17 Seconds';
 ```

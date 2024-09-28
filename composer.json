@@ -9,8 +9,8 @@
     "symfony/dependency-injection": "^6.3 || ^7.0",
     "symfony/http-kernel": "^6.3 || ^7.0",
     "symfony/options-resolver": "^6.3 || ^7.0",
-    "symfony/translation-contracts": "^2.5 || ^3.0",
-    "symfony/translation": "^6.3 || ^7.0"
+    "symfony/translation": "^6.3 || ^7.0",
+    "symfony/translation-contracts": "^2.5 || ^3.0"
   },
   "require-dev": {
     "ergebnis/composer-normalize": "^2.42",
@@ -40,6 +40,7 @@
     "cs-fixer:fix": "php-cs-fixer fix --diff",
     "phpstan": "phpstan analyse src tests --level=${PHPSTAN_LEVEL:-8}",
     "quality": [
+      "composer normalize",
       "@cs-fixer:fix",
       "@phpstan",
       "@tests"

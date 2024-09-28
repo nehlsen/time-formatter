@@ -1,6 +1,6 @@
 # Time Formatter
 
-Small Utility class to format _remaining_ time of something into a human-readable form.
+Small Utility class to format seconds until or since into a human-readable form. For example, _"Task is due in 3 Days"_ or _"Milk is expired since 3 Hours 42 Minutes"_
 
 ## Example
 
@@ -19,15 +19,11 @@ $formattedBestBefore = $formatter->format($secondsUntilBad);
 // $formattedBestBefore == '3 Days 1 Hour 17 Seconds';
 ```
 
-For a range of options and examples see [example1.php](example/example1.php)
+For a range of options and examples, see [example2.php](example/example2.php) and [example1.php](example/example1.php)
 
 ## Installation
 
 1. Require the library
    ```shell
-   composer require nehlsen/time-formatter
+   composer require nehlsen/time-formatter-bundle
    ```
-2. For the translations to work, the provided files can be used, copied, linked.
-   But they are not enabled automatically.
-   * [messages.en.yaml](translation/messages.en.yaml)
-   * [messages.de.yaml](translation/messages.de.yaml)
